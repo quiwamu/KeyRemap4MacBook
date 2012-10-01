@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<name>Change Ctrl+i,s,z,TAB to Command+i,s,z,TAB</name>
+		<identifier>private.ctrl-TAB_to_command_TAB</identifier>
+		<autogen>--KeyToKey-- KeyCode::TAB, VK_CONTROL, KeyCode::TAB, ModifierFlag::COMMAND_L</autogen>
+	<autogen>--KeyToKey-- KeyCode::Z, VK_CONTROL, KeyCode::Z, ModifierFlag::COMMAND_L</autogen>
+	<autogen>--KeyToKey-- KeyCode::S, VK_CONTROL, KeyCode::S, ModifierFlag::COMMAND_L</autogen>
+	<autogen>--KeyToKey-- KeyCode::I, VK_CONTROL, KeyCode::I, ModifierFlag::COMMAND_L</autogen>
+	</item>
+	<item>
+		<name>英数キーの二度押しでOption+S（Google日本語入力向け）</name>
+		<identifier>private.jis_eisuu_2_option_s</identifier>
+		<autogen>--KeyToKey-- KeyCode::JIS_EISUU, ModifierFlag::EXTRA1, KeyCode::S, VK_OPTION</autogen>
+		<autogen>--KeyToKey-- KeyCode::JIS_EISUU, ModifierFlag::NONE, KeyCode::VK_STICKY_EXTRA1_FORCE_ON</autogen>
+	</item>
+	<item>
+		<name>escape hack</name>
+		<appendix>Change CTRL-[,@ to ESC</appendix>
+		<identifier>private.escape_hack</identifier>
+		<autogen>--KeyToKey-- KeyCode::JIS_ATMARK, VK_CONTROL, KeyCode::ESCAPE</autogen>
+		<autogen>--KeyToKey-- KeyCode::JIS_BRACKET_LEFT, VK_CONTROL, KeyCode::ESCAPE</autogen>
+	</item>
+	<item>
+		<name>Change APPs</name>
+		<appendix>Change APPs by Eisuu and Kana</appendix>
+ <identifier>private.change_apps</identifier>
+		<autogen>--KeyToKey-- KeyCode::JIS_KANA, VK_CONTROL, KeyCode::TAB, VK_COMMAND</autogen>
+		<autogen>--KeyToKey-- KeyCode::JIS_EISUU, VK_CONTROL, KeyCode::TAB, VK_COMMAND | VK_SHIFT</autogen>
+	</item>
+</root>
