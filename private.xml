@@ -1,6 +1,13 @@
 <?xml version="1.0"?>
 <root>
 	<item>
+		<name>LeaveInsMode with EISUU(Terminal)</name>
+		<identifier>private.app_terminal_esc_with_eisuu</identifier>
+		<only>TERMINAL</only>
+		<autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+		<autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+    </item>
+	<item>
 		<name>CTRL->COMMAND hacks</name>
 		<appendix>change CTRL+i,s,z,tab to COMMAND+i,s,z,tab</appendix>
 		<identifier>private.ctrl-command_hacks</identifier>
