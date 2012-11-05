@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <root>
 	<item>
+        <name>change window by CTRL-1 (Terminal)</name>
+		<appendix>CTRL-1 -> COMMAND-F1</appendix>
+		<identifier>private.terminal_window_change</identifier>
+		<only>TERMINAL</only>
+		<autogen>--KeyToKey-- KeyCode::KEY_1, VK_CONTROL,
+			KeyCode::F1, VK_COMMAND</autogen>
+	</item>
+	<item>
 		<name>printscreen key to command+shift+4</name>
 		<identifier>printscreen_hack</identifier>
 		<autogen>--KeyToKey-- KeyCode::PC_PRINTSCREEN, KeyCode::KEY_4, VK_COMMAND | VK_SHIFT</autogen>
